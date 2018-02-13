@@ -5,12 +5,14 @@
 // Remove any blank space on the end.
 
 
+
 // CODE
 function reverseWords(str){
-  return str; // reverse those words
+  return str.split(" ").reverse().join(" ").trim();
 }
-
 
 
 // DRIVER CODE
 reverseWords("The greatest developer in all the land would need practice to become great")  // should return "great become to practice need would land the all in developer greatest The"
+
+reverseWords("Whathappensiftherearenospaces") // should return the string
